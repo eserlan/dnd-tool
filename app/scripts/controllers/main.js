@@ -4,7 +4,7 @@ angular.module('pointBuyApp')
     .controller('MainCtrl', function ($scope) {
 
         $scope.totalCost = 0;
-        $scope.budget = 27;
+        $scope.budget = 29;
 
         var costs = {
             3: -4,
