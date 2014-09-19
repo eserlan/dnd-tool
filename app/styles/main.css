@@ -1,0 +1,29 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.btn {
+    margin-top: -9px;
+}
+
+.stat {
+    width: 35px;
+    margin-top: 2px;
+}
+
+
+.statLabel {
+    display: inline-block;
+    width:90px;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.ml10 {
+    margin-left: 10px;
+}

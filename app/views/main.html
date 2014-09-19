@@ -1,0 +1,73 @@
+<!--suppress HtmlFormInputWithoutLabel -->
+
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h3 style="color:blue">D&D 5 Point Buy</h3>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Strength</span>
+		<button class="btn" ng-click="str = str - 1" ng-disabled="str<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="str" ng-init="str=8" min="3" max="18" tabindex="1"/>
+		<button class="btn" ng-click="str = str + 1" ng-disabled="(str>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Dexterity</span>
+		<button class="btn" ng-click="dex = dex - 1" ng-disabled="dex<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="dex" min="3" max="18" ng-init="dex=8" tabindex="2"/>
+		<button class="btn" ng-click="dex = dex + 1" ng-disabled="(dex>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Constitution</span>
+		<button class="btn" ng-click="con = con - 1" ng-disabled="con<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="con" min="3" max="18" ng-init="con=8" tabindex="3"/>
+		<button class="btn" ng-click="con = con + 1" ng-disabled="(con>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Intelligence</span>
+		<button class="btn" ng-click="int = int - 1" ng-disabled="int<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="int" min="3" max="18" ng-init="int=8" tabindex="4"/>
+		<button class="btn" ng-click="int = int + 1" ng-disabled="(int>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Wisdom</span>
+		<button class="btn" ng-click="wis = wis - 1" ng-disabled="wis<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="wis" min="3" max="18" ng-init="wis=8" tabindex="5"/>
+		<button class="btn" ng-click="wis = wis + 1" ng-disabled="(wis>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<span class="statLabel">Charisma</span>
+		<button class="btn" ng-click="cha = cha - 1" ng-disabled="cha<4" tabindex="-1">-</button>
+		<input type="number" class="stat" ng-model="cha" min="3" max="18" ng-init="cha=8" tabindex="6"/>
+		<button class="btn" ng-click="cha = cha + 1" ng-disabled="(cha>17) || budgetReached" tabindex="-1">+
+		</button>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h3 ng-class="{red: budgetReached}">Total cost: {{totalCost}}</h3>
+		<h4>Budget: {{budget}}</h4>
+
+
+	</div>
+</div>
+
